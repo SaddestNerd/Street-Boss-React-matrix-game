@@ -1,0 +1,490 @@
+.MainMenu{
+  position: fixed;
+  .background{
+
+    img{
+
+      filter: hue-rotate(280deg) saturate(40%);
+      width: 100%;
+      height: 100vh;
+    }
+  }
+  .logo{
+    position: absolute; 
+    left: 50%; 
+    top: 10%; 
+    transform: translate(-50%, -10%);
+
+
+    margin-left: auto; 
+    margin-right: auto; 
+
+    img{
+      width: 50vw;
+    }
+    p{
+      text-align: center;
+      font-size: 3vw;
+      font-family: "Broken Console";
+      font-weight: 800;
+      color: white;
+      margin-top: 1vw;
+    }
+  }
+  .menu{
+    position: absolute; 
+    left: 50%; 
+    bottom: 30%; 
+    transform: translate(-50%, 30%);
+    text-align: center;
+    button{
+      background-color: transparent;
+      cursor: pointer;
+
+      font-size: 2vw;
+      font-family: "Broken Console";
+      font-weight: 800;
+      color: white;
+      margin-top: 1vw;
+    }
+    button:hover{
+      color: rgb(178, 209, 235);
+    }
+  }
+  .description{
+
+    .description-close{
+      z-index: 500;
+      position: absolute;
+      top: 2%;
+      right: 1.5%;
+      color: white;
+      background-color: transparent;
+      font-size: 1.5vw;
+      font-family: "Broken Console";
+      font-weight: 800;
+    }
+    position: absolute; 
+    left: 50%; 
+
+    transform: translateX(-50%);
+    width: 75vw;
+    height: 45vw;
+    background-color: rgb(135, 127, 141);
+    border-color: rgb(27, 27, 27);
+    box-shadow:   -7px 0 0 0 rgb(38, 33, 46),
+    7px 0 0 0 rgb(38, 33, 46),
+    0 -7px 0 0 rgb(38, 33, 46),
+    0 7px 0 0 rgb(38, 33, 46);
+
+    .description-wrapper{
+      width: 75vw;
+      height: 38vw;
+      
+      .description-logo{
+        font-family: "Broken Console";
+        font-weight: 800;
+        color: white;
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 5vw;
+        font-size: 2vw;
+      }
+
+      .description-img{
+        margin-top: 50px;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 10px;
+      }
+      .text{
+        font-family: "Broken Console";
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        line-height: 1.5vw;
+        margin-top: 1vw;
+        font-size: 1vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+      }
+      table{
+        width: 400px;
+        color: white;
+        text-align: center;
+        font-family: "Broken Console";
+        font-weight: 800;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        font-size: 1.4vw;
+        border-collapse: collapse;
+        border-radius: 10px;
+        border-style: hidden; /* hide standard table (collapsed) border */
+   
+        box-shadow: 0 0 0 2px #000000; /* this draws the table border  */
+        background-color: #dfdfdf; 
+        tr{
+          border: solid black 1px;
+
+        }
+        th{
+          border: solid black 1px;
+          padding: 1vw;
+
+        }
+        td{
+          border: solid black 1px;
+          padding-left: 1vw;
+          padding-right: 1vw;
+          padding-top: 1vw;
+          padding-bottom: 1vw;
+    
+          .flex{
+            display: flex;
+            justify-content: center;
+          }
+        }
+        input{
+          padding: 10px;
+          background-color: white;
+          display: block;
+          background-color: transparent;
+          text-align: center;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+.MainGame{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  bottom: -100%;
+  
+  .startGif{
+    z-index: 999;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+    img{
+
+    }
+  }
+  .winlose-wrapper{
+    z-index: 199;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+    img{
+      position: absolute;
+      left: 50%; 
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 60vw;
+    }
+  }
+  .background{
+
+    img{
+      image-rendering: pixelated;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+    }
+  }
+  table{
+    position: relative;
+    z-index: 500;
+    color: rgb(44, 44, 44);
+    background-color: rgba(216, 216, 216, 0.74);
+    text-align: center;
+    font-family: "Broken Console";
+    font-weight: 800;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14vw;
+    font-size: 1.8vw;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px #000000; /* this draws the table border  */ 
+    thead{
+
+    }
+    tbody{
+
+    }
+    tr{
+      border: solid black 1px;
+
+    }
+    th{
+      border: solid black 1px;
+      padding: 1vw;
+
+    }
+    td{
+      border: solid black 1px;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      padding: 1vw;
+    }
+    .redTD{
+      background-color: #50d3d367;
+    }
+    .greenTD{
+      background-color: #82ff698c;
+    }
+    .yellowTD{
+      background-color: #ffd069ee;
+    }
+  }
+  .menuButtons{
+    position: relative;
+    z-index: 500;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    font-family: "Broken Console";
+    font-weight: 800;
+    button{
+      line-height: 0;
+      color: white;
+      padding-top: 1vw;
+      padding-bottom: 0.7vw;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      margin-left: 1vw;
+      margin-right: 0vw;
+      border-radius: .5vw;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+      background: rgb(49, 49, 49);
+
+    }
+  }
+}
+.buttons.bottom{
+  position: absolute;
+  left: 50%; 
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons{
+  position: relative;
+  text-align: center;
+  font-family: "Broken Console";
+  font-weight: 800;
+  z-index: 300;
+  font-size: 2vw;
+
+  button{
+    display:inline-block;
+    line-height: 0;
+    color: white;
+    padding-top: 2vw;
+    padding-bottom: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: .5vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    transition: .2s ease-in-out;
+  }
+
+  button:disabled,
+  button[disabled]{
+    background-color: #cccccc;
+    color: #666666;
+  }
+
+  .deffBtn{
+    background:  #5977ff;
+  }
+  .passBtn{
+    background: #4cc55c;
+  }
+  .atackBtn{
+    background: #FF5959;
+  }
+
+  .deffBtn:hover{
+    background:  #4157b9;
+
+  }
+  .passBtn:hover{
+    background: #32853d;
+  }
+  .atackBtn:hover{
+
+    background: #a13838;
+  }
+}
+
+.restartBtn{
+  font-weight: 800;
+  z-index: 9999;
+  font-size: 2vw;
+  position: absolute;
+  bottom: -10vw;
+  display: inline-block;
+  line-height: 0;
+  color: white;
+  padding-top: 2vw;
+  padding-bottom: 1.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: .5vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  transition: .2s ease-in-out;
+  background: #353535;
+  font-family: "Broken Console";
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sprites-game{
+  image-rendering: pixelated;
+  .lifeCount{
+    color: white;
+    font-family: "Broken Console";
+    font-weight: 800;
+    font-weight: 0.5vw;
+  }
+  .allay{
+    position: absolute;
+    width: 4vw;
+    top: 82%;
+    left: -10%;
+    .img-wrapper{
+      position: relative;
+      img{
+
+        left: 0;
+        width: 5vw;
+      }
+      .img-wrapper-cloud{
+        position: absolute;
+        top: -120px;
+        left: 50px;
+        width: 8vw;
+      }
+      .img-wrapper-thinking{
+        top: -115px;
+        left: 85px;
+        position: absolute;
+        width: 4vw;
+      }
+    }
+  }
+  .enemy{
+    position: absolute;
+    width: 4vw;
+    top: 82%;
+    right: -0%;
+    .img-wrapper{
+      position: relative;
+      
+      img{
+
+        left: 0;
+        width: 5vw;
+      }
+      .img-wrapper-cloud{
+        top: -120px;
+        left: -100px;
+        position: absolute;
+        width: 8vw;
+      }
+      .img-wrapper-thinking{
+        top: -115px;
+        left: -62px;
+        position: absolute;
+        width: 4vw;
+      }
+    }
+  }
+}
+
+.sprites{
+  image-rendering: pixelated;
+  .allay{
+    position: absolute;
+    width: 4vw;
+    top: 62%;
+    left: 15%;
+  }
+  .enemy{
+    position: absolute;
+    width: 4vw;
+    top: 62%;
+    right: 15%;
+    .img-wrapper{
+      position: relative;
+      img{
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
+.input-ababka{
+  width: 120px;
+  background-color: transparent;
+}
+
+.logs-table{
+  position: absolute;
+  overflow-y: auto;
+  top: -1000px;
+  right: 30px;
+  width: 300px;
+  height: 150px;
+  background-color: #353535;
+  color: white;
+  font-family: "Broken Console";
+  .logs-label{
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(88, 180, 241)
+  }
+  p{
+    width: 280px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: 13px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
